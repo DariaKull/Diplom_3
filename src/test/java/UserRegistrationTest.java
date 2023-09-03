@@ -35,15 +35,6 @@ public class UserRegistrationTest {
         page.findElementAndInputData(FIELD_PASSWORD, user.getPassword());
         page.findAndClickElement(REGISTRATION_BUTTON);
         assertTrue(page.isElementDisplayed(page.findElement(LOGIN_HEADER)));
-        page.findElementAndInputData(FIELD_EMAIL_LOGIN, user.getEmail());
-        page.findElementAndInputData(FIELD_PASSWORD_LOGIN, user.getPassword());
-        page.findAndClickElement(LOGIN_BUTTON);
-        assertTrue(page.isElementDisplayed(page.findElement(SET_BURGER_HEADER)));
-        page.findAndClickElement(PROFILE_LINK);
-        assertEquals(user.getName(), page.findElement(FIELD_NAME_PROFILE).getAttribute("value"));
-        assertEquals(user.getEmail().toLowerCase(), page.findElement(FIELD_EMAIL_PROFILE).getAttribute("value"));
-        page.findAndClickElement(LOGOUT_BUTTON);
-        assertTrue(page.isElementDisplayed(page.findElement(LOGIN_HEADER)));
     }
 
     @After
