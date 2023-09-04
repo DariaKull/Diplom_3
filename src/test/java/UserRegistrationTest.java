@@ -6,11 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import static model.LoginPage.*;
-import static model.MainPage.PROFILE_LINK;
-import static model.MainPage.SET_BURGER_HEADER;
-import static model.ProfilePage.*;
 import static model.RegistrationPage.*;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class UserRegistrationTest {

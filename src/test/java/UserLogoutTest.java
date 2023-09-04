@@ -34,7 +34,7 @@ public class UserLogoutTest {
 
     @Test
     @DisplayName("Выход пользователя из аккаунта")
-    public void UserLogoutTest(){
+    public void userLogoutTest(){
         MainPage page = new MainPage(driver);
         page.findAndClickElement(PROFILE_LINK);
         assertEquals(user.getName(), page.findElement(FIELD_NAME_PROFILE).getAttribute("value"));
